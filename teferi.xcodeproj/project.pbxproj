@@ -199,6 +199,7 @@
 		8CA987351F7A2B5F003AB4B9 /* EventAnnotator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA987341F7A2B5F003AB4B9 /* EventAnnotator.swift */; };
 		8CA987371F7A2DD4003AB4B9 /* TimelineProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA987361F7A2DD4003AB4B9 /* TimelineProcessor.swift */; };
 		8CA987391F7A2F95003AB4B9 /* Cleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA987381F7A2F95003AB4B9 /* Cleaner.swift */; };
+		8CAD1F182024CC7B00AC0983 /* FunctionalOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD1F172024CC7B00AC0983 /* FunctionalOperators.swift */; };
 		8CB140A61FC456C000FC9904 /* GoalSuggestionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB140A51FC456C000FC9904 /* GoalSuggestionAlert.swift */; };
 		8CB9EF9B1E8BB589003D1FFC /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9EF9A1E8BB589003D1FFC /* LineView.swift */; };
 		8CBA1E2A2007707200CAFF2A /* CoreDataPersistencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA1E292007707200CAFF2A /* CoreDataPersistencyTests.swift */; };
@@ -563,6 +564,7 @@
 		8CA987341F7A2B5F003AB4B9 /* EventAnnotator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnnotator.swift; sourceTree = "<group>"; };
 		8CA987361F7A2DD4003AB4B9 /* TimelineProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProcessor.swift; sourceTree = "<group>"; };
 		8CA987381F7A2F95003AB4B9 /* Cleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleaner.swift; sourceTree = "<group>"; };
+		8CAD1F172024CC7B00AC0983 /* FunctionalOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalOperators.swift; sourceTree = "<group>"; };
 		8CB140A51FC456C000FC9904 /* GoalSuggestionAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSuggestionAlert.swift; sourceTree = "<group>"; };
 		8CB9EF9A1E8BB589003D1FFC /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		8CBA1E292007707200CAFF2A /* CoreDataPersistencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistencyTests.swift; sourceTree = "<group>"; };
@@ -755,6 +757,7 @@
 		240AC7161D748C8800F21F4F /* teferi */ = {
 			isa = PBXGroup;
 			children = (
+				8CAD1F162024CC6100AC0983 /* Utils */,
 				AC1E70EF1E3F4C120090D474 /* Algorithm */,
 				24CD8A461D7A13560017C53E /* Extensions */,
 				7E3C06941E30B7AA00859747 /* Generated */,
@@ -1502,6 +1505,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		8CAD1F162024CC6100AC0983 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8CAD1F172024CC7B00AC0983 /* FunctionalOperators.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8CBA1E282007705700CAFF2A /* NewPersistency */ = {
 			isa = PBXGroup;
 			children = (
@@ -2229,6 +2240,7 @@
 				8CF0CE2D1F67CB0400FCED99 /* MotionEvent.swift in Sources */,
 				8C1728FD1EF02D9A002ABDDA /* DailySummaryViewModel.swift in Sources */,
 				BE7FAFC61E72F96F00A62AC9 /* TrackEvent.swift in Sources */,
+				8CAD1F182024CC7B00AC0983 /* FunctionalOperators.swift in Sources */,
 				24DE23EE1E1BB3180089B49E /* CalendarDailyActivityView.swift in Sources */,
 				AC4A55E41FA7302600A62107 /* GoalService.swift in Sources */,
 				8C1728FF1EF02D9A002ABDDA /* SummaryPageViewController.swift in Sources */,
