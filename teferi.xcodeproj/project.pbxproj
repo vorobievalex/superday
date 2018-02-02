@@ -216,6 +216,7 @@
 		8CDCC5F61ECB156F00A3D25D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCC5F51ECB156F00A3D25D /* OnboardingViewModel.swift */; };
 		8CDEFACF1FBB3483001E2A75 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEFACE1FBB3483001E2A75 /* CustomCollectionView.swift */; };
 		8CE544E62024427300FBC2A1 /* SlotTimelineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE544E52024427300FBC2A1 /* SlotTimelineItem.swift */; };
+		8CE544EF2024665F00FBC2A1 /* InteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */; };
 		8CE6BDE11E7D4BF5003B852C /* TrackEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6BDE01E7D4BF5003B852C /* TrackEventExtensions.swift */; };
 		8CF0255A1EAFA2FF00BF0A42 /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025591EAFA2FF00BF0A42 /* SwipeInteractionController.swift */; };
 		8CF0CE2B1F67CA5C00FCED99 /* DefaultMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF0CE2A1F67CA5C00FCED99 /* DefaultMotionService.swift */; };
@@ -578,6 +579,7 @@
 		8CDCC5F51ECB156F00A3D25D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		8CDEFACE1FBB3483001E2A75 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		8CE544E52024427300FBC2A1 /* SlotTimelineItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotTimelineItem.swift; sourceTree = "<group>"; };
+		8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorFactory.swift; sourceTree = "<group>"; };
 		8CE6BDE01E7D4BF5003B852C /* TrackEventExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackEventExtensions.swift; sourceTree = "<group>"; };
 		8CF025591EAFA2FF00BF0A42 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
 		8CF0CE2A1F67CA5C00FCED99 /* DefaultMotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMotionService.swift; sourceTree = "<group>"; };
@@ -758,6 +760,7 @@
 				24BA51A91D74D79C00042CDF /* Models */,
 				8CA0C53D1F737D5C0024B2DE /* TimelineGenerator */,
 				BEA7835F1E6DB48F00D44603 /* Providers */,
+				8CE544ED2024662C00FBC2A1 /* Interactors */,
 				24BA51A51D74D69C00042CDF /* Services */,
 				8CA461361EC9A2BB00587399 /* UI */,
 				240AC7171D748C8800F21F4F /* AppDelegate.swift */,
@@ -1522,6 +1525,15 @@
 				8CE544E52024427300FBC2A1 /* SlotTimelineItem.swift */,
 			);
 			path = Display;
+			sourceTree = "<group>";
+		};
+		8CE544ED2024662C00FBC2A1 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */,
+			);
+			name = Interactors;
+			path = Providers/Interactors;
 			sourceTree = "<group>";
 		};
 		8CEEF5AA1F175DB4007C36DA /* Datasource */ = {
@@ -2328,6 +2340,7 @@
 				8C1EA3051F17EA6F003C3EEB /* TimelineDataSource.swift in Sources */,
 				AC46676E1FFE801400C3BD5E /* CategoryCell.swift in Sources */,
 				24564F4D1D83207900D9A8AE /* MainViewModel.swift in Sources */,
+				8CE544EF2024665F00FBC2A1 /* InteractorFactory.swift in Sources */,
 				8CCEBEC21F79053400A4D560 /* AnnotatedEvent.swift in Sources */,
 				AC4A55E21FA72B1E00A62107 /* Goal.swift in Sources */,
 				8CA987351F7A2B5F003AB4B9 /* EventAnnotator.swift in Sources */,

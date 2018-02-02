@@ -168,6 +168,8 @@ class AppDelegate : UIResponder, UIApplicationDelegate
                                                        trackEventService: trackEventService,
                                                        goalService: goalService)
         
+        InteractorFactory.shared.setup(coreDataPersistency: CoreDataPersistency(managedObjectContext: coreDataStack.managedObjectContext))
+        
         window!.rootViewController = IntroPresenter.create(with: viewModelLocator)
         window!.makeKeyAndVisible()
     }
