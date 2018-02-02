@@ -17,4 +17,11 @@ class InteractorFactory
     {
         self.coreDataPersistency = coreDataPersistency
     }
+    
+    // INTERACTOR CREATORS
+    
+    func createGetTimeSlotsForDateInteractor(date: Date) -> GetTimeSlotsForDate
+    {
+        return GetTimeSlotsForDate(persistency: coreDataPersistency, date: date)
+    }
 }

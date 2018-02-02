@@ -217,6 +217,7 @@
 		8CDEFACF1FBB3483001E2A75 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEFACE1FBB3483001E2A75 /* CustomCollectionView.swift */; };
 		8CE544E62024427300FBC2A1 /* SlotTimelineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE544E52024427300FBC2A1 /* SlotTimelineItem.swift */; };
 		8CE544EF2024665F00FBC2A1 /* InteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */; };
+		8CE544F12024674300FBC2A1 /* GetTimeSlotsForDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE544F02024674300FBC2A1 /* GetTimeSlotsForDate.swift */; };
 		8CE6BDE11E7D4BF5003B852C /* TrackEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6BDE01E7D4BF5003B852C /* TrackEventExtensions.swift */; };
 		8CF0255A1EAFA2FF00BF0A42 /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF025591EAFA2FF00BF0A42 /* SwipeInteractionController.swift */; };
 		8CF0CE2B1F67CA5C00FCED99 /* DefaultMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF0CE2A1F67CA5C00FCED99 /* DefaultMotionService.swift */; };
@@ -580,6 +581,7 @@
 		8CDEFACE1FBB3483001E2A75 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		8CE544E52024427300FBC2A1 /* SlotTimelineItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotTimelineItem.swift; sourceTree = "<group>"; };
 		8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorFactory.swift; sourceTree = "<group>"; };
+		8CE544F02024674300FBC2A1 /* GetTimeSlotsForDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTimeSlotsForDate.swift; sourceTree = "<group>"; };
 		8CE6BDE01E7D4BF5003B852C /* TrackEventExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackEventExtensions.swift; sourceTree = "<group>"; };
 		8CF025591EAFA2FF00BF0A42 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
 		8CF0CE2A1F67CA5C00FCED99 /* DefaultMotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMotionService.swift; sourceTree = "<group>"; };
@@ -1531,6 +1533,7 @@
 			isa = PBXGroup;
 			children = (
 				8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */,
+				8CE544F02024674300FBC2A1 /* GetTimeSlotsForDate.swift */,
 			);
 			name = Interactors;
 			path = Providers/Interactors;
@@ -2350,6 +2353,7 @@
 				247F05FA1D87325600451BAD /* PersistencyService.swift in Sources */,
 				BE7FAFC81E73014700A62AC9 /* DefaultTrackEventService.swift in Sources */,
 				24564F641D83265900D9A8AE /* UIColorExtensions.swift in Sources */,
+				8CE544F12024674300FBC2A1 /* GetTimeSlotsForDate.swift in Sources */,
 				2420A8661DB56B5500C0478C /* EmptyStateView.swift in Sources */,
 				8C0B32AF1FBAE34300FFF991 /* GoalTime.swift in Sources */,
 			);
