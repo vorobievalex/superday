@@ -215,6 +215,7 @@
 		8CDB55731F755D0400FAD466 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDB55721F755D0400FAD466 /* LoadingIndicator.swift */; };
 		8CDCC5F41ECB156100A3D25D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCC5F31ECB156100A3D25D /* OnboardingPresenter.swift */; };
 		8CDCC5F61ECB156F00A3D25D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDCC5F51ECB156F00A3D25D /* OnboardingViewModel.swift */; };
+		8CDDDA252029C7FD0038A7A1 /* GetTimeSlotsForDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDDA242029C7FC0038A7A1 /* GetTimeSlotsForDateTests.swift */; };
 		8CDEFACF1FBB3483001E2A75 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEFACE1FBB3483001E2A75 /* CustomCollectionView.swift */; };
 		8CE544E62024427300FBC2A1 /* SlotTimelineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE544E52024427300FBC2A1 /* SlotTimelineItem.swift */; };
 		8CE544EF2024665F00FBC2A1 /* InteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */; };
@@ -580,6 +581,7 @@
 		8CDB55721F755D0400FAD466 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		8CDCC5F31ECB156100A3D25D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		8CDCC5F51ECB156F00A3D25D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		8CDDDA242029C7FC0038A7A1 /* GetTimeSlotsForDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTimeSlotsForDateTests.swift; sourceTree = "<group>"; };
 		8CDEFACE1FBB3483001E2A75 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		8CE544E52024427300FBC2A1 /* SlotTimelineItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotTimelineItem.swift; sourceTree = "<group>"; };
 		8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorFactory.swift; sourceTree = "<group>"; };
@@ -878,6 +880,7 @@
 		24A21B671D7C3E0800CEB4F3 /* teferiTests */ = {
 			isa = PBXGroup;
 			children = (
+				8CDDDA232029C7BE0038A7A1 /* Interactors */,
 				8CBA1E282007705700CAFF2A /* NewPersistency */,
 				24564F401D82FDBB00D9A8AE /* Extensions */,
 				7E57ECEA1E30EBD40094251E /* Helpers */,
@@ -1530,6 +1533,14 @@
 				8CBA1E342007C1D800CAFF2A /* MockCoreDataPersistency.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8CDDDA232029C7BE0038A7A1 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDDA242029C7FC0038A7A1 /* GetTimeSlotsForDateTests.swift */,
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		8CE544E92024604000FBC2A1 /* Display */ = {
@@ -2375,6 +2386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDDDA252029C7FD0038A7A1 /* GetTimeSlotsForDateTests.swift in Sources */,
 				8C9D25E51E97FD3F00D39119 /* MockMetricsService.swift in Sources */,
 				8CF0CE2F1F68258A00FCED99 /* MockMotionService.swift in Sources */,
 				8C9D25E41E97FD1000D39119 /* TimelineViewModelTests.swift in Sources */,

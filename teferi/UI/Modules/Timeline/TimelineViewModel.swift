@@ -144,7 +144,7 @@ class TimelineViewModel: RxViewModel
                 {
                     let slotTimelineItem = SlotTimelineItem(timeSlots: groupedTimeSlots)
                     
-                    let timelineItem = groupedTimeSlots.first!.category == .commute ?
+                    let timelineItem = slotTimelineItem.category == .commute ?
                         TimelineItem.commuteSlot(item: slotTimelineItem) :
                         TimelineItem.slot(item: slotTimelineItem)
                     

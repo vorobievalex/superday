@@ -27,10 +27,10 @@ class GetTimeSlotsForDate: Interactor
         let timer = isCurrentDay ? Observable<Int>.timer(0, period: 10, scheduler: MainScheduler.instance).mapTo(()) : Observable.just(())
 
         let refresh = Observable.merge([
-            isCurrentDay ? timeSlotService.timeSlotCreatedObservable.filter(belongs(to: date)).mapTo(()) : Observable.never(),
-            timeSlotService.timeSlotsUpdatedObservable.filter(allBelong(to: date)).mapTo(()),
-            appLifecycleService.movedToForegroundObservable.mapTo(())
-        ])
+                isCurrentDay ? timeSlotService.timeSlotCreatedObservable.filter(belongs(to: date)).mapTo(()) : Observable.never(),
+                timeSlotService.timeSlotsUpdatedObservable.filter(allBelong(to: date)).mapTo(()),
+                appLifecycleService.movedToForegroundObservable.mapTo(())
+            ])
             .startWith(())
             .throttle(0.3, latest: false, scheduler: MainScheduler.instance)
         
@@ -58,7 +58,7 @@ class GetTimeSlotsForDate: Interactor
             .reversed()
             .map { pm in
                 let newTimeSlot = TimeSlot(
-                    withStartTime: pm.startTime,
+                    startTime: pm.startTime,
                     endTime: previousTime,
                     category: pm.category
                 )

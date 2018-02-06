@@ -118,9 +118,9 @@ class CalendarViewModelTests: XCTestCase
         timeService.mockDate = currentDate
         
         timeSlotService.timeSlotsToReturn = [
-            TimeSlot(withStartTime: Date(), category: .food),
-            TimeSlot(withStartTime: Date(), category: .work),
-            TimeSlot(withStartTime: Date(), category: .leisure)
+            TimeSlot(startTime: Date(), category: .food),
+            TimeSlot(startTime: Date(), category: .work),
+            TimeSlot(startTime: Date(), category: .leisure)
         ]
         
         let activities = viewModel.getActivities(forDate: dateRequested)
@@ -138,9 +138,9 @@ class CalendarViewModelTests: XCTestCase
         settingsService.setInstallDate(installDate)
 
         timeSlotService.timeSlotsToReturn = [
-            TimeSlot(withStartTime: Date(), category: .food),
-            TimeSlot(withStartTime: Date(), category: .work),
-            TimeSlot(withStartTime: Date(), category: .leisure)
+            TimeSlot(startTime: Date(), category: .food),
+            TimeSlot(startTime: Date(), category: .work),
+            TimeSlot(startTime: Date(), category: .leisure)
         ]
         
         let activities = viewModel.getActivities(forDate: dateRequested)
