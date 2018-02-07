@@ -10,7 +10,7 @@ enum PersistencyError: Error
 
 class CoreDataPersistency
 {
-    let managedObjectContext: NSManagedObjectContext
+    private let managedObjectContext: NSManagedObjectContext
     
     init(managedObjectContext: NSManagedObjectContext)
     {
@@ -22,7 +22,8 @@ class CoreDataPersistency
         return Observable.create {
             [unowned self] observer in
             
-            print("Perform fetch <-----------")
+            print("Perform fetch <--------------------------")
+
             self.managedObjectContext.perform {
                 do {
                     let result = try self.managedObjectContext.fetch(resource.request) as! [NSManagedObject]
