@@ -6,6 +6,7 @@ enum PersistencyError: Error
 {
     case noResults
     case couldntParse
+    case couldntCreate
 }
 
 class CoreDataPersistency
@@ -22,7 +23,6 @@ class CoreDataPersistency
         return Observable.create {
             [unowned self] observer in
             
-            print("Perform fetch <-----------")
             self.managedObjectContext.perform {
                 do {
                     let result = try self.managedObjectContext.fetch(resource.request) as! [NSManagedObject]
@@ -33,6 +33,28 @@ class CoreDataPersistency
                     observer.onError(error)
                 } catch {
                     observer.onError(PersistencyError.noResults)
+                }
+            }
+            
+            return Disposables.create{ }
+        }
+    }
+    
+    func create<A: PersistencyModel>(_ model: A) -> Observable<A>
+    {
+        return Observable.create { [unowned self] observer in
+            
+            self.managedObjectContext.perform {
+                
+                let _ = model.encode(using: self.managedObjectContext)
+                
+                do {
+                    try self.managedObjectContext.save()
+                    
+                    observer.onNext(model)
+                    observer.onCompleted()
+                } catch {
+                    observer.onError(PersistencyError.couldntCreate)
                 }
             }
             
