@@ -325,7 +325,7 @@
 		BEA783651E6DB5AF00D44603 /* DefaultCategoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA783641E6DB5AF00D44603 /* DefaultCategoryProvider.swift */; };
 		BEC84F311E708D4B0096275C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC84F301E708D4B0096275C /* Style.swift */; };
 		BEDE5B3C1E4A3F3C0082FFC3 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE5B3B1E4A3F3C0082FFC3 /* PermissionViewController.swift */; };
-		BEE5A3BF1E72F6B200CA717D /* (null) in Sources */ = {isa = PBXBuildFile; };
+		BEE5A3BF1E72F6B200CA717D /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		BEF8AB211E8413AA00B4F289 /* Persister.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8AB201E8413AA00B4F289 /* Persister.swift */; };
 /* End PBXBuildFile section */
 
@@ -2116,13 +2116,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-teferiTests/Pods-teferiTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
@@ -2370,7 +2374,7 @@
 				8CCEBEC21F79053400A4D560 /* AnnotatedEvent.swift in Sources */,
 				AC4A55E21FA72B1E00A62107 /* Goal.swift in Sources */,
 				8CA987351F7A2B5F003AB4B9 /* EventAnnotator.swift in Sources */,
-				BEE5A3BF1E72F6B200CA717D /* (null) in Sources */,
+				BEE5A3BF1E72F6B200CA717D /* BuildFile in Sources */,
 				8CB9EF9B1E8BB589003D1FFC /* LineView.swift in Sources */,
 				ACEA23C21FAC70150068C149 /* NewGoalPresenter.swift in Sources */,
 				247F05FA1D87325600451BAD /* PersistencyService.swift in Sources */,

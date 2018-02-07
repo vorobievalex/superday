@@ -3,8 +3,6 @@ import Foundation
 struct SlotTimelineItem
 {
     let timeSlots : [TimeSlot]
-    let category: Category
-    let duration : TimeInterval
     let shouldDisplayCategoryName : Bool
     let isLastInPastDay : Bool
     let isRunning: Bool
@@ -19,9 +17,30 @@ struct SlotTimelineItem
         return timeSlots.last!.endTime
     }
     
+    var duration: TimeInterval
+    {
+        guard let endTime = endTime else { return 0 }
+        return endTime.timeIntervalSince(startTime)
+    }
+    
+    var category: Category
+    {
+        return timeSlots.first!.category
+    }
+    
     var containsMultiple: Bool
     {
         return timeSlots.count > 1
+    }
+    
+    init (timeSlots: [TimeSlot], shouldDisplayCategoryName: Bool = true, isLastInPastDay: Bool = false, isRunning: Bool = false)
+    {
+        assert(!timeSlots.isEmpty, "Can't create a SlotTimelineItem without slots")
+        
+        self.timeSlots = timeSlots
+        self.shouldDisplayCategoryName = shouldDisplayCategoryName
+        self.isLastInPastDay = isLastInPastDay
+        self.isRunning = isRunning
     }
 }
 
@@ -31,25 +50,9 @@ extension SlotTimelineItem
     {
         return SlotTimelineItem(
             timeSlots: self.timeSlots,
-            category: self.category,
-            duration: self.duration,
             shouldDisplayCategoryName: self.shouldDisplayCategoryName,
             isLastInPastDay: !isCurrentDay,
             isRunning: isCurrentDay
         )
-    }
-    
-    static func with(timeSlots: [TimeSlot],
-                     timeSlotService: TimeSlotService,
-                     shouldDisplayCategoryName: Bool = true,
-                     isLastInPastDay: Bool = false,
-                     isRunning: Bool = false) -> SlotTimelineItem
-    {
-        return SlotTimelineItem(timeSlots: timeSlots,
-                            category: timeSlots.first!.category,
-                            duration: timeSlots.map({ timeSlotService.calculateDuration(ofTimeSlot: $0) }).reduce(0, +),
-                            shouldDisplayCategoryName: shouldDisplayCategoryName,
-                            isLastInPastDay: isLastInPastDay,
-                            isRunning: isRunning)
     }
 }
