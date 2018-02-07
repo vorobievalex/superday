@@ -7,19 +7,6 @@ struct SlotTimelineItem
     let isLastInPastDay : Bool
     let isRunning: Bool
     
-    init(timeSlots: [TimeSlot], shouldDisplayCategoryName: Bool = true, isLastInPastDay: Bool = false, isRunning: Bool = false)
-    {
-        self.timeSlots = timeSlots
-        self.shouldDisplayCategoryName = shouldDisplayCategoryName
-        self.isLastInPastDay = isLastInPastDay
-        self.isRunning = isRunning
-    }
-    
-    var category: Category
-    {
-        return timeSlots.first!.category
-    }
-    
     var startTime: Date
     {
         return timeSlots.first!.startTime
@@ -30,15 +17,30 @@ struct SlotTimelineItem
         return timeSlots.last!.endTime
     }
     
+    var duration: TimeInterval
+    {
+        guard let endTime = endTime else { return 0 }
+        return endTime.timeIntervalSince(startTime)
+    }
+    
+    var category: Category
+    {
+        return timeSlots.first!.category
+    }
+    
     var containsMultiple: Bool
     {
         return timeSlots.count > 1
     }
     
-    var duration: TimeInterval
+    init (timeSlots: [TimeSlot], shouldDisplayCategoryName: Bool = true, isLastInPastDay: Bool = false, isRunning: Bool = false)
     {
-        guard let startTime = timeSlots.first?.startTime, let endTime = timeSlots.last?.endTime else { return 0 }
-        return endTime.timeIntervalSince(startTime)
+        assert(!timeSlots.isEmpty, "Can't create a SlotTimelineItem without slots")
+        
+        self.timeSlots = timeSlots
+        self.shouldDisplayCategoryName = shouldDisplayCategoryName
+        self.isLastInPastDay = isLastInPastDay
+        self.isRunning = isRunning
     }
 }
 

@@ -42,6 +42,7 @@ PODS:
 DEPENDENCIES:
   - Crashlytics
   - Fabric
+  - Firebase
   - Firebase/Core
   - JTAppleCalendar (= 7.1.5)
   - Nimble (~> 7.0.3)
@@ -75,6 +76,6 @@ SPEC CHECKSUMS:
   SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
   SwiftyBeaver: 4f74563624b2c1e821c522c54142b5dd5ebb0f30
 
-PODFILE CHECKSUM: fb0e22dbc0d8e057a6b8ec617d19a64e282ec5b5
+PODFILE CHECKSUM: 62da0e66446d2c6495dcea95777044c18e1bed15
 
 COCOAPODS: 1.1.1

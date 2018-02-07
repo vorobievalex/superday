@@ -19,6 +19,7 @@ target 'teferi' do
 
   target 'teferiTests' do
     inherit! :search_paths
+    pod 'Firebase'
     pod 'Nimble', '~> 7.0.3'
     pod 'RxTest', '~> 4.0'
   end
