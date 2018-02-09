@@ -38,7 +38,7 @@ extension MotionEventPM: PersistencyModel
 
 extension MotionEventPM
 {
-    static func all(fromDate startDate: Date, toDate endDate: Date) -> CoreDataResource<[MotionEventPM]>
+    static func all(from startDate: Date, to endDate: Date) -> CoreDataResource<[MotionEventPM]>
     {
         let predicate = Predicate(parameter: "startTime", rangesFromDate: startDate as NSDate, toDate: endDate as NSDate)
         let sortDescriptor = NSSortDescriptor(key: "startTime", ascending: true)

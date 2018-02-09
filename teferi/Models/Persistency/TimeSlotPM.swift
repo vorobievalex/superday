@@ -40,17 +40,17 @@ extension TimeSlotPM: PersistencyModel
 
 extension TimeSlotPM
 {
-    static func all(fromDate startDate: Date, toDate endDate: Date) -> CoreDataResource<[TimeSlotPM]>
+    static func all(from startDate: Date, to endDate: Date) -> CoreDataResource<[TimeSlotPM]>
     {
         let predicate = Predicate(parameter: "startTime", rangesFromDate: startDate as NSDate, toDate: endDate as NSDate)
         let sortDescriptor = NSSortDescriptor(key: "startTime", ascending: true)
         return CoreDataResource<[TimeSlotPM]>.many(predicate: predicate, sortDescriptor: sortDescriptor)
     }
     
-    static func all(forDate date: Date) -> CoreDataResource<[TimeSlotPM]>
+    static func all(for date: Date) -> CoreDataResource<[TimeSlotPM]>
     {
         let startDate = date.ignoreTimeComponents()
         let endDate = date.tomorrow.ignoreTimeComponents().addingTimeInterval(-1)
-        return all(fromDate: startDate, toDate: endDate)
+        return all(from: startDate, to: endDate)
     }
 }

@@ -49,7 +49,7 @@ extension LocationEventPM: PersistencyModel
 
 extension LocationEventPM
 {
-    static func all(fromDate startDate: Date, toDate endDate: Date) -> CoreDataResource<[LocationEventPM]>
+    static func all(from startDate: Date, to endDate: Date) -> CoreDataResource<[LocationEventPM]>
     {
         let predicate = Predicate(parameter: "timeStamp", rangesFromDate: startDate as NSDate, toDate: endDate as NSDate)
         let sortDescriptor = NSSortDescriptor(key: "timeStamp", ascending: true)

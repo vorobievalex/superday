@@ -45,7 +45,7 @@ class GetTimeSlotsForDate: Interactor
     private func fetchTimeSlots() -> Observable<[TimeSlotPM]>
     {
         // Takes timeslots from 1 day before and 1 after to also get the ones spaning midnight
-        return persistency.fetch(TimeSlotPM.all(fromDate: date.add(days: -1), toDate: date.add(days: 1)))
+        return persistency.fetch(TimeSlotPM.all(from: date.add(days: -1), to: date.add(days: 1)))
     }
     
     private func toTimeSlots(timeSlotPMs: [TimeSlotPM]) -> [TimeSlot]

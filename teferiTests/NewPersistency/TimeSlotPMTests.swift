@@ -20,7 +20,7 @@ class TimeSlotPMTests: XCTestCase
         let fromDate = Date.createTime(hour: 9, minute: 0)
         let toDate = Date.createTime(hour: 18, minute: 0)
         
-        let resource = TimeSlotPM.all(fromDate: fromDate, toDate: toDate)
+        let resource = TimeSlotPM.all(from: fromDate, to: toDate)
         
         _ = mockPersistency.fetch(resource)
             .subscribe()
