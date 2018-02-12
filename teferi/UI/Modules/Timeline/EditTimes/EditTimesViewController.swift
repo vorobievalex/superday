@@ -94,9 +94,14 @@ class EditTimesViewController: UIViewController
         recognizer.setTranslation(CGPoint.zero, in: view)
     }
     
-    @IBAction func closeButtonTapped(_ sender: Any)
+    @IBAction func saveButtonTapped(_ sender: Any)
     {
         viewModel.saveTimes()
+        presenter.dismiss()
+    }
+
+    @IBAction func closeButtonTapped(_ sender: Any)
+    {
         presenter.dismiss()
     }
 }
