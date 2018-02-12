@@ -44,5 +44,11 @@ extension MotionEventPM
         let sortDescriptor = NSSortDescriptor(key: "startTime", ascending: true)
         return CoreDataResource<[MotionEventPM]>.many(predicate: predicate, sortDescriptor: sortDescriptor)
     }
+    
+    static func last() -> CoreDataResource<MotionEventPM>
+    {
+        let sortDescriptor = NSSortDescriptor(key: "startTime", ascending: false)
+        return CoreDataResource<[MotionEventPM]>.single(sortDescriptor: sortDescriptor)
+    }
 }
 
