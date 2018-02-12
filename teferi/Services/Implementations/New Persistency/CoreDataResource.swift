@@ -38,7 +38,7 @@ extension CoreDataResource
         return CoreDataResource<B>(request: request) {
             managedObjects in
             guard let first = managedObjects.first else {
-                throw PersistencyError.couldntParse
+                throw PersistencyError.noResults
             }
             return try B.init(managedObject: first)
         }

@@ -172,7 +172,8 @@ class AppDelegate : UIResponder, UIApplicationDelegate
             coreDataPersistency: CoreDataPersistency(managedObjectContext: coreDataStack.managedObjectContext),
             timeService: timeService,
             timeSlotService: timeSlotService,
-            appLifecycleService: appLifecycleService
+            appLifecycleService: appLifecycleService,
+            motionService: motionService
         )
         
         window!.rootViewController = IntroPresenter.create(with: viewModelLocator)

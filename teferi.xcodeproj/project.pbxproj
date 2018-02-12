@@ -245,6 +245,7 @@
 		AC1E70F11E3F4C490090D474 /* KNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1E70F01E3F4C490090D474 /* KNN.swift */; };
 		AC34445E1E697D1100B1D53B /* KNNDecisionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34445D1E697D1100B1D53B /* KNNDecisionType.swift */; };
 		AC3901F41E5665CF008063C7 /* CategoryButtonsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3901F31E5665CF008063C7 /* CategoryButtonsHandler.swift */; };
+		AC412AFA202C849D00211DD3 /* ImportMotionEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC412AF9202C849D00211DD3 /* ImportMotionEvents.swift */; };
 		AC4348C42004ED8400BF2F70 /* TimelineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4348C32004ED8400BF2F70 /* TimelineItem.swift */; };
 		AC4348C820079B3000BF2F70 /* SlotTimelineItemTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4348C720079B3000BF2F70 /* SlotTimelineItemTestHelper.swift */; };
 		AC449C311E92BC8C00847957 /* PermissionViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC449C301E92BC8C00847957 /* PermissionViewModelProtocol.swift */; };
@@ -325,7 +326,7 @@
 		BEA783651E6DB5AF00D44603 /* DefaultCategoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA783641E6DB5AF00D44603 /* DefaultCategoryProvider.swift */; };
 		BEC84F311E708D4B0096275C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC84F301E708D4B0096275C /* Style.swift */; };
 		BEDE5B3C1E4A3F3C0082FFC3 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE5B3B1E4A3F3C0082FFC3 /* PermissionViewController.swift */; };
-		BEE5A3BF1E72F6B200CA717D /* (null) in Sources */ = {isa = PBXBuildFile; };
+		BEE5A3BF1E72F6B200CA717D /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		BEF8AB211E8413AA00B4F289 /* Persister.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8AB201E8413AA00B4F289 /* Persister.swift */; };
 /* End PBXBuildFile section */
 
@@ -615,6 +616,7 @@
 		AC2D206C1F965C93006488E9 /* teferi4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = teferi4.xcdatamodel; sourceTree = "<group>"; };
 		AC34445D1E697D1100B1D53B /* KNNDecisionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNNDecisionType.swift; sourceTree = "<group>"; };
 		AC3901F31E5665CF008063C7 /* CategoryButtonsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryButtonsHandler.swift; sourceTree = "<group>"; };
+		AC412AF9202C849D00211DD3 /* ImportMotionEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportMotionEvents.swift; sourceTree = "<group>"; };
 		AC4348C32004ED8400BF2F70 /* TimelineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineItem.swift; sourceTree = "<group>"; };
 		AC4348C720079B3000BF2F70 /* SlotTimelineItemTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotTimelineItemTestHelper.swift; sourceTree = "<group>"; };
 		AC449C301E92BC8C00847957 /* PermissionViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -1556,6 +1558,7 @@
 			children = (
 				8CE544EE2024665F00FBC2A1 /* InteractorFactory.swift */,
 				8CE544F02024674300FBC2A1 /* GetTimeSlotsForDate.swift */,
+				AC412AF9202C849D00211DD3 /* ImportMotionEvents.swift */,
 			);
 			name = Interactors;
 			path = Providers/Interactors;
@@ -2164,6 +2167,7 @@
 				BE7FAFCA1E7319AD00A62AC9 /* LocationModelAdapter.swift in Sources */,
 				8C5B88751EBCCDA00096AE5B /* CategoryExtensions.swift in Sources */,
 				8C2D92291FC5BEC500D0B12F /* EnableNotificationsPresenter.swift in Sources */,
+				AC412AFA202C849D00211DD3 /* ImportMotionEvents.swift in Sources */,
 				AC69F0A21F4C3FD000EF2CC9 /* RatingViewController.swift in Sources */,
 				8C71A5331F33779B00E8258C /* SlotTimelineItem+TimelineCell.swift in Sources */,
 				8C03616E1FB35D990022594F /* SlotView.swift in Sources */,
@@ -2373,7 +2377,7 @@
 				8CCEBEC21F79053400A4D560 /* AnnotatedEvent.swift in Sources */,
 				AC4A55E21FA72B1E00A62107 /* Goal.swift in Sources */,
 				8CA987351F7A2B5F003AB4B9 /* EventAnnotator.swift in Sources */,
-				BEE5A3BF1E72F6B200CA717D /* (null) in Sources */,
+				BEE5A3BF1E72F6B200CA717D /* BuildFile in Sources */,
 				8CB9EF9B1E8BB589003D1FFC /* LineView.swift in Sources */,
 				ACEA23C21FAC70150068C149 /* NewGoalPresenter.swift in Sources */,
 				247F05FA1D87325600451BAD /* PersistencyService.swift in Sources */,
